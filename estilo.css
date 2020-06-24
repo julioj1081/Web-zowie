@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    background-blend-mode: normal, lighten, soft-light;
+    cursor: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    min-height: 10vh;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0.2rem;
+    padding: 0.5rem;
+}
+
+.cursor {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.2s ease;
+    transition-property: background, transform;
+    transform-origin: 150% 150%;
+    z-index: -1;
+    /*filtrado al pasar el cursor*/
+    backdrop-filter: grayscale();
+}
+
+.border-white {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.2s ease;
+    transition-property: background, transform;
+    transform-origin: 150% 150%;
+    z-index: -1;
+    /*filtrado al pasar el cursor*/
+    backdrop-filter: grayscale();
+}
+
+.front-cover {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.elemento {
+    width: 36%;
+    margin: 2rem;
+}
+
+.front-desc {
+    text-align: center;
+    z-index: -3;
+}
+
+.front-cover img {
+    position: relative;
+    z-index: -2;
+    width: 100%;
+}
+
+.link-grow {
+    transform: scale(1.5);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hovered-link {
+    color: white;
+}
+
+.mensaje {
+    margin: 1rem;
+    text-align: end;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: black;
+}
+
+footer {
+    margin-top: 1rem;
+    width: 100%;
+    background: black;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -3;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    color: honeydew;
+}
